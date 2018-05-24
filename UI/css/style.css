@@ -14,7 +14,7 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #808080;
-    margin-top: 35px;
+    /*margin-top: 35px;*/
 }
 
 /* Style the navigation bar links */
@@ -63,7 +63,9 @@ body {
 
 /* footer section*/
 .footer {
-    padding: 20px; /* Some padding */
-    text-align: center; /* Center text*/
-    background: #ddd; /* Grey background */
+    padding: 284px 0px 0px;
+    text-align: center;
+    background: #ddd;
 }
+
+#home_image{width: 100%;}
