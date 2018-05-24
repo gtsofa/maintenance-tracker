@@ -12,8 +12,9 @@ body {
 
 /* Style the top navigation bar */
 .navbar {
-    overflow: hidden; /* Hide overflow */
-    background-color: #808080; /* Gray background color */
+    overflow: hidden;
+    background-color: #808080;
+    margin-top: 35px;
 }
 
 /* Style the navigation bar links */
@@ -25,6 +26,15 @@ body {
     padding: 14px 20px; 
     text-decoration: none; 
 }
+/*content container */
+.content_container{
+	
+	width:100%;
+	height:600px;
+}
+
+
+
 
 /* Right-aligned link */
 .navbar a.right {
