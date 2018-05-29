@@ -1,7 +1,15 @@
 body {
-  margin: 4px;
-  font-family: Arial, Helvetica, sans-serif;
+
+    background: url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 4px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+body,html {
+    height: 100%;
+  }
 
 .header {
     padding: 80px; 
@@ -23,7 +31,7 @@ body {
     display: block; 
     color: white; 
     text-align: center; 
-    padding: 14px 20px; 
+    padding: 5px 5px; 
     text-decoration: none; 
 }
 /*content container */
@@ -63,7 +71,10 @@ body {
 
 /* footer section*/
 .footer {
-    padding: 284px 0px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -170px;
+    padding: 4px;
     text-align: center;
     background: #ddd;
 }
@@ -163,3 +174,10 @@ form.searchrequests a {
 
 }
 
+/*Sign up form*/
+form.sign-up { 
+    margin: 0 auto; 
+    width:250px;
+    }
+    
+    
