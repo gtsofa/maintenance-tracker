@@ -177,8 +177,9 @@ form.sign-up {
     margin: 0 auto; 
     width:250px;
     }
+
 /* pagination style*/
-.pagination  {
+/* form.previouspage  {
     color: black;
     float: left;
     padding: 8px 16px;
@@ -190,3 +191,11 @@ form.sign-up {
     background-color: dodgerblue;
     color: white;
 }
+
+form.nextpage  {
+    color: black;
+    float: right;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+} */
