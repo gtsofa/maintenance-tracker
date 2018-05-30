@@ -1,0 +1,50 @@
+<!--UI/sign_up.html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MTracker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">MTracker</a>
+        <a href="signin" class="right">sign in</a>
+        <a href="signup" class="right">sign up</a>
+        <a href="index.html" class="right">home</a>
+    </div>
+    <!--
+    <div class="content_container">
+        <img src="img/bg.png" id="home_image"></img>
+    </div>
+-->
+        <form class="sign-up" align="center" >
+            <div class="container">
+                <h1>Register for an account</h1>
+                <label for="email"><b>Email</b></label>
+                <input type="text" name="email" required>
+                <label for="username"><b>Username</b></label>
+                <input type="text" name="username" required>
+                <label for="firstname"><b>First Name</b></label>
+                <input type="text" name="firstname" required>
+                <label for="lastname"><b>Last Name</b></label>
+                <input type="text" name="lastname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" name="psw" required>
+                <label for="confirmpsw"><b>Confirm Password</b></label>
+                <input type="password" name="confirmpsw" required>
+                <input type="checkbox" name="remember"/>I accept the terms and conditions of MTracker
+                <button class="btn" type="submit" name="register"><span>Register</span></button>
+            </div>
+        </form>
+
+    <div class="footer">
+        <p>MTracker &copy; 2018. All Rights Reserved</p>
+    </div>
+</body>
+</html>
