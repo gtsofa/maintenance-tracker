@@ -1,0 +1,82 @@
+<!--UI/admin_all_requests.html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MTracker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">MTracker</a>
+        <a href="#admin" class="right">admin</a>
+        <a href="signout" class="right">sign out</a>
+        <a href="admindashboard" class="right">dashboard</a>
+    </div>
+    
+    <div class="content_container">
+        <img src="img/bg.png" id="home_image"></img>
+    </div>
+    <div class="user-sign-up">
+        <h1>All requests</h1>
+                <!-- Load icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <!--search form-->
+                <form class="searchrequests" action="#">
+                    <input type="text" placeholder="search for a request" name="search">
+                </form>
+                <table>
+                    <tr>
+                      <th>Username</th>
+                      <th>Department</th>
+                      <th>RequestID</th>
+                      <th>Title</th>
+                      <th>Description</th>
+                      <th>Date Created</th>
+                      <th>Status</th>
+                      <th>Comments</th>
+                    </tr>
+                    <tr>
+                      <td>Maestro Grande</td>
+                      <td>Service Delivery</td>
+                      <td>001</td>
+                      <td>Site access Issue</td>
+                      <td>Error says 'you're blocked to access this site</td>
+                      <td>23/05/2018</td>
+                      <td>Aproved</td>
+                      <td>You have been put into a user group that can now access that kind of a site.</td>
+                    </tr>
+                    <tr>
+                      <td>Amina Camala</td>
+                      <td>Service Delivery</td>
+                      <td>002</td>
+                      <td>Seat Issue</td>
+                      <td>I can not lean properly on this chair , screws are dead</td>
+                      <td>24/05/2018</td>
+                      <td>Aproved</td>
+                      <td>Wait we see how to fixou for your desparment anytime have been put blaind of a site.</td>
+                      </tr>
+                    <tr>
+                      <td>Saron Liue</td>
+                      <td>Human Resources</td>
+                      <td>003</td>
+                      <td>Downloading payslip</td>
+                      <td>I cannot download my payslip for the past three weeks now</td>
+                      <td>23/05/2018</td>
+                      <td>Pending</td>
+                      <td>Wait as we look into the issues .</td>
+                      </tr>
+
+                  </table>
+    </div>
+
+    <div class="footer">
+        <p>MTracker &copy; 2018. All Rights Reserved</p>
+    </div>
+</body>
+</html>

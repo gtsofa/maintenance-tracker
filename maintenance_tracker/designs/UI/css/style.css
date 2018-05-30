@@ -1,0 +1,209 @@
+body {
+
+    background: url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html {
+    height: 100%;
+  }
+
+.header {
+    padding: 80px; 
+    text-align: center; 
+    background: #1abc9c; /* green background */
+    color: white; 
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #808080;
+    /*margin-top: 35px;*/
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 5px 5px; 
+    text-decoration: none; 
+}
+/*content container */
+.content_container{
+	
+	width:100%;
+	height:600px;
+}
+
+
+
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; 
+}
+
+/*Main style*/
+/* Column container */
+.row { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Main column */
+.main { 
+    flex: 70%; /* Set the width of the main content */
+    background-color: white; /* White background color */
+    padding: 20px; /* Some padding */
+}
+
+/* footer section*/
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: -170px;
+    padding: 4px;
+    text-align: center;
+    background: #ddd;
+}
+
+#home_image{width: 100%;}
+
+
+
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 300px;
+  margin: 20px;
+  max-width: 450px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], textarea {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: rgb(76, 147, 175);
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* Set a style for the dropdown menu */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Table style */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* Search style */
+/* Style the search field */
+form.searchrequests input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: right;
+    width: 14%;
+    background: #f1f1f1;
+  }
+
+form.searchrequests a {
+    text-decoration: none;
+
+}
+
+/*Sign up form*/
+form.sign-up { 
+    margin: 0 auto; 
+    width:250px;
+    }
+    
+    
+/* Pagination Style */    
+
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #3399ff;
+    color: white;
+    border: 1px solid #3399ff;
+}
+    

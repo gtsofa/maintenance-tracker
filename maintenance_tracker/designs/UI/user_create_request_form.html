@@ -1,0 +1,50 @@
+<!--UI/user_create_request_form.html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MTracker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">MTracker</a>
+        <a href="#username" class="right">Username</a>
+        <a href="#signout" class="right">sign out</a>
+        <a href="#requests" class="right">requests</a>
+    </div>
+    
+    <div class="content_container">
+        <img src="img/bg.png" id="home_image"></img>
+    </div>
+    <div class="user-sign-up">
+        <form class="#">
+            <div class="container">
+                <h1>Create a new request.</h1>
+                <label for="title"><b>Title</b></label>
+                <input type="text" name="title" required>
+                <label for="description"><b>Description</b></label>
+                <textarea rows="5" cols="50" name="description" required></textarea>
+                <label for="department"><b>Department</b></label>
+                <select id="department" name="department">
+                    <option value="itsupport">IT Support</option>
+                    <option value="humanresource">Human Resources</option>
+                    <option value="sdelivery">Service Delivery</option>
+                    <option value="admin">Adminstration</option>
+                    <option value="finance">Finance</option>
+                </select>
+                <button class="btn" type="submit" name="register"><span>Submit</span></button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>MTracker &copy; 2018. All Rights Reserved</p>
+    </div>
+</body>
+</html>
