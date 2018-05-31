@@ -1,15 +1,18 @@
 # app/v1/requests/views.py
 
-from flask import Flask,request,jsonify,abort
+from flask import Flask, request, jsonify, abort
 from flask import make_response
 
 list_requests = []
+
+# insert a new request in our request data structure
 @req.route('maintenance_tracker/api/v1/requests', methods=['POST'])
-def post_requests():
-    if not 'title' in request.json:
+def create_request():
+    if not request.json or not 'title' in request.json:
         abort(400)
+        
         api_request = {
-            'id':request.json['id'],
+            'id':api_requests[-1]['id'] + 1,
             'title': request.json['title'],
             'description': request.json['description'],
             'department': request.json['department']
