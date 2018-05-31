@@ -8,22 +8,7 @@ app = Flask(__name__)
 
 # create a memory database of requests .. a simply array of dictionaries
 list_requests = []
-# list_requests = [
-#     {
-#         'id': 1,
-#         "title":"Site blocked",
-#         "description":"I cannot access this site , it says site blocked",
-#         "department": "IT Support",
-#     },
-#     {
-#         'id': 2,
-#         "title":"Seat cannot bend back",
-#         "description":"This seat is very uncomfortable when you try to lean behind it doesn't work. ",
-#         "department": "Admin",
-#     }
-    
-#     ]
-   
+
  # GET all VIEW all 
 @app.route('/maintenance_tracker/api/v1/requests', methods=['GET'])
 def get_all_requests():
@@ -60,12 +45,6 @@ def edit_request(requestID):
         abort(404)
     if not request.json:
         abort(400)
-    # if 'title' in request.json and type(request.json['title']) != unicode:
-    #     abort(400)
-    # if 'description' in request.json and type(request.json['description']) != unicode:
-    #     abort(400)
-    # if 'department' in request.json and type(request.json['department']) != unicode:
-    #     abort(400)
     list_request[0]['title'] = request.json.get('title', list_request[0]['title'])
     list_request[0]['description'] = request.json.get('description', list_request[0]['description'])
     list_request[0]['department'] = request.json.get('department', list_request[0]['department'])
