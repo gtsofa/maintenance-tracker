@@ -58,11 +58,6 @@ def delete_request(requestID):
         abort(404)
     list_requests.remove(list_request[0])
     return jsonify({'result': True})
-
-
-
-
-        
     
 if __name__== '__main__':
     app.run(debug=True)
