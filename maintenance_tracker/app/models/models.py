@@ -11,4 +11,4 @@ class Request:
     """Contains data for requests"""
     def __init__(self):
         """Initialize methods to be used"""
-        self.businesses = {}
+        self.requests = {}
