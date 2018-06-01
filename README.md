@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/gtsofa/maintenance-tracker.svg?branch=master)](https://travis-ci.org/gtsofa/maintenance-tracker)
+
 # maintenance-tracker
 
 ##### Introduction

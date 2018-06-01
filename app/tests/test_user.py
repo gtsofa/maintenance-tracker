@@ -51,7 +51,22 @@ class CreateUserTestCase(unittest.TestCase):
         response1 = self.client.post('/api/v1/auth/register',
                     data=json.dumps(self.user),
                     content_type='application/json')
-        assert b'' in response1.data
+        assert b'{\n "message": "username already taken!"\n}\n' in response1.data
+
+    def test_some_details_missing(self):
+        """
+        Test api to ensure no details are ommited 
+        """
+        response = self.client.post('/api/v1/auth/register',
+                    data=json.dumps({
+                        "username":"",
+                        "password":"",
+                        "first_name":"Maestro",
+                        "last_name":"Tsofa"
+                    }),
+                    content_type='application/json')
+        assert b'{\n "message": "username and password are missing" \n}\n' in response.data
+
 
         
         
