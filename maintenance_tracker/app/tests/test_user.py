@@ -1,8 +1,9 @@
-# app/tests/v1/test_sign_up_user.py
+# app/tests/v1/test_user.py
 
+import sys
 import unittest
 import json
-from app import create_app
+from app.views import app
 
 class CreateUserTestCase(unittest.TestCase):
     """
@@ -13,10 +14,11 @@ class CreateUserTestCase(unittest.TestCase):
         This method will be called before every time a test runs, 
         and will create data for use by the tests
         """
-        self.app = create_app(config_name="testing")
-        create_app.testing = True
-        self.user = User()
-        self.request = Request()
+        self.app = app
+        self.client = self.app.test_client
+        #create_app.testing = True
+        #self.user = User()
+        #self.request = Request()
         
     def test_sign_up_user(self):
         """
