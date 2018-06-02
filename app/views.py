@@ -1,19 +1,24 @@
 # app/__init__.py
 
 from flask import Flask, jsonify, request, abort
-from app import app
+from app import create_app
+
+from app.v1.models import Request
+
+m_request = Request()
 
 # initialize the app
 
-app = Flask(__name__)
+app = create_app(config_name="development")
 
 # create a memory database of requests .. a simply array of dictionaries
 list_requests = []
 
- # GET all VIEW all 
+
+# GET all VIEW all 
 @app.route('/maintenance_tracker/api/v1/requests', methods=['GET'])
 def get_all_requests():
-    return jsonify({'list_requests': list_requests})
+    return jsonify({'requests': m_request.requests})
     
 # GET 1 
 @app.route('/maintenance_tracker/api/v1/requests/<int:requestID>', methods=['GET'])
