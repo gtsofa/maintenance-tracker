@@ -56,6 +56,24 @@ Test the endpoints by changing  the http methods
 
 ## Screenshots 
 
+Registered User
+[Registered User](<img src="/designs/img/mockups/users/register_user.png"/>)
+
+Created Request
+[Register User](<img src="/designs/img/mockups/requests/request_created.png" />)
+
+Get all Request
+[Get all Request](<img src="/designs/img/mockups/requests/get_all_requests.png" />)
+
+Get Request by ID
+[Get all Request](<img src="/designs/img/mockups/requests/get_a_request_by_ID.png" />)
+
+Edit a request
+[Get all Request](<img src="/designs/img/mockups/requests/edit_request.png" />)
+
+Delete a request
+[Get all Request](<img src="/designs/img/mockups/requests/delete_request.png" />)
+
 
 
 
