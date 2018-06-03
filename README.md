@@ -23,9 +23,10 @@ Before getting started ensure you have the following step up on your local envir
 ##### Run The Tests
 $ nosetests --with-coverage
 
-The API Endpoints
+#### The API Endpoints
 
-Requests Endpoints
+### Requests Endpoints
+
 Method | Endpoint | Description
 --- | --- | ---
 POST | /maintenance_tracker/api/v1/requests | Creates a new request
@@ -33,6 +34,7 @@ GET | /maintenance_tracker/api/v1/requests | Lists all requests of a logged in u
 GET | /maintenance_tracker/api/v1/requests/request-Id | List a request of a logged in user
 PUT | /maintenance_tracker/api/v1/requests/request-Id | Edit a request of a logged in user
 DELETE | /maintenance_tracker/api/v1/requests/request-Id | Delete a request of a logged in user
+
 
 ## Testing the EndPoints
 
