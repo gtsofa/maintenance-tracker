@@ -2,6 +2,7 @@
 
 # maintenance-tracker
 [![Build Status](https://travis-ci.org/gtsofa/maintenance-tracker.svg?branch=ft-crud-api-endpoints)](https://travis-ci.org/gtsofa/maintenance-tracker)
+[![Coverage Status](https://coveralls.io/repos/github/gtsofa/maintenance-tracker/badge.svg?branch=master)](https://coveralls.io/github/gtsofa/maintenance-tracker?branch=develop)
 [![Maintainability](https://api.codeclimate.com/v1/badges/586502a167ea793f7a1a/maintainability)](https://codeclimate.com/github/gtsofa/maintenance-tracker/maintainability)
 
 ##### Introduction
