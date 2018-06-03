@@ -1,7 +1,8 @@
 
-[![Build Status](https://travis-ci.org/gtsofa/maintenance-tracker.svg?branch=ft-crud-api-endpoints)](https://travis-ci.org/gtsofa/maintenance-tracker)
 
 # maintenance-tracker
+[![Build Status](https://travis-ci.org/gtsofa/maintenance-tracker.svg?branch=ft-crud-api-endpoints)](https://travis-ci.org/gtsofa/maintenance-tracker)
+[![Maintainability](https://api.codeclimate.com/v1/badges/586502a167ea793f7a1a/maintainability)](https://codeclimate.com/github/gtsofa/maintenance-tracker/maintainability)
 
 ##### Introduction
 Maintenance Tracker App is an application that provides users with the ability to reach out to operations or repairs department regarding repair or maintenance requests and monitor the status of their request.
