@@ -59,7 +59,7 @@ Test the endpoints by changing  the http methods
 ## Screenshots 
 
 Registered User
-[Registered User](<img src="/designs/img/mockups/users/register_user.png"/>)
+![Registered User](<img src="/designs/img/mockups/users/register_user.png"/>)
 
 Created Request
 [Register User](<img src="/designs/img/mockups/requests/request_created.png" />)
@@ -75,6 +75,8 @@ Edit a request
 
 Delete a request
 ![Get all Request](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/requests/after_delete_request.png "Trial text")
+
+
 
 
 
