@@ -62,16 +62,16 @@ Registered User
 ![Registered User](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/users/register_user.png)
 
 Created Request
-[Register User](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/requests/request_created.png)
+![Register User](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/requests/request_created.png)
 
 Get all Request
-[Get all Request](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/requests/get_all_requests.png)
+![Get all Request](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/requests/get_all_requests.png)
 
 Get Request by ID
-[Get all Request](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/requests/get_a_request_by_ID.png)
+![Get all Request](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/requests/get_a_request_by_ID.png)
 
 Edit a request
-[Get all Request](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/requests/edited_request.png)
+![Get all Request](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/requests/edited_request.png)
 
 Delete a request
 ![Get all Request](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/requests/delete_request.png)
