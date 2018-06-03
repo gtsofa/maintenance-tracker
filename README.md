@@ -74,7 +74,7 @@ Edit a request
 [Get all Request](<img src="/designs/img/mockups/requests/edit_request.png" />)
 
 Delete a request
-[Get all Request](<img src="/designs/img/mockups/requests/delete_request.png" />)
+[Get all Request](https://github.com/gtsofa/maintenance-tracker/blob/ft-crud-api-endpoints/designs/UI/img/mockups/requests/after_delete_request.png)
 
 
 
