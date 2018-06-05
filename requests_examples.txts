@@ -36,7 +36,9 @@ Create request1
 {
     "title":"Seat cannot bend back",
     "description":"This seat is very uncomfortable when you try to lean behind it doesn't work. ",
-    "department": "Admin",
+    "department": "Admin"
+
+}
 
 }
 
