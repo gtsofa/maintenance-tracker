@@ -38,9 +38,13 @@ Create request1
     "description":"This seat is very uncomfortable when you try to lean behind it doesn't work. ",
     "department": "Admin",
 
+}
+
 Create request2
 {
     "title":"computer is too slow",
     "description":"The computer takes ages before loading even a light page, it always hangs up",
-    "department": "IT Support",
+    "department": "IT Support"
+
+}
 
