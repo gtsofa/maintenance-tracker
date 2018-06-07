@@ -1,13 +1,13 @@
 # app/tests/test_user.py
 
-import sys
+import os
 import unittest
 import json
 from app import create_app
 
 class CreateUserTestCase(unittest.TestCase):
     """
-    This class tests the User 
+    The api test case class
     """
     def setUp(self):
         """
@@ -18,78 +18,103 @@ class CreateUserTestCase(unittest.TestCase):
         create_app.testing = True
         self.client = self.app.test_client
 
-        self.user = {
-            "username":"maestro",
-            "name":"Maestro Tsofa",
-            "email":"maestro@maintenance_tracker.com",
-            "password":"amka123"
+        self.test_user = {
+            "username":"testuser",
+            "name":"Test User",
+            "email":"test_user@maintenance_tracker.com",
+            "password":"testuser123",
+            "confirm_password": "testuser123"
+        }
+        self.reset_password = {
+            "current_password": "Testuser123",
+            "new_password" : "userTest321",
+            "confirm_new_password" : "userTest321"
+        }
+        self.sign_in_user = {
+            "username": "sign_in_user",
+            "password": "sign_in123"
         }
 
     def tearDown(self):
         """
-        This method will be called after the tests run. 
-        It will help to clear data after every test
+        Clears data after every test run
         """
-        self.user.clear()
+        self.test_user.clear()
+        self.reset_password.clear()
+        self.sign_in_user.clear()
+
 
     def test_sign_up_user(self):
         """
         Test api if it can register a new user
         """
         response = self.client().post('/api/v1/auth/register', 
-                    data=json.dumps(self.user),
+                    data=json.dumps(self.test_user),
                     content_type='application/json')
         self.assertEqual(response.status_code, 201)
         self.assertIn('User registered successfully', str(response.data))
 
     def test_can_not_create_duplicate_user(self):
         """
-        Test api can only allow one user creation
+        Test api can only allow one username creation
         """
         response = self.client().post('/api/v1/auth/register',
-                    data=json.dumps(self.user),
+                    data=json.dumps(self.test_user),
                     content_type='application/json')
         response1 = self.client().post('/api/v1/auth/register',
-                    data=json.dumps(self.user),
+                    data=json.dumps(self.test_user),
                     content_type='application/json')
         self.assertIn("username already exists", str(response.data))
 
-    def test_some_details_missing(self):
+    def test_blank_username(self):
         """
-        Test api to ensure no details are ommited 
+        Test api for blank usernames 
         """
         response = self.client().post('/api/v1/auth/register',
                     data=json.dumps({
                         "username":"",
-                        "password":"",
-                        "first_name":"Maestro",
-                        "last_name":"Tsofa"
+                        "password":"testuser123",
+                        "first_name":"test",
+                        "last_name":"user"
                     }),
                     content_type='application/json')
-        self.assertIn("username and password missing", str(response.data))
+        self.assertIn("username missing", str(response.data))
 
-
+    def test_blank_password(self):
+        """
+        Test api for blank password 
+        """
+        response = self.client().post('/api/v1/auth/register',
+                    data=json.dumps({
+                        "username":"testuser",
+                        "password":"",
+                        "first_name":"test",
+                        "last_name":"user"
+                    }),
+                    content_type='application/json')
+        self.assertIn("username missing", str(response.data))
         
-        
-    def test_sign_in_user(self):
+    def test_can_sign_in_user(self):
         """
         Test api if it can sign in existing user
         """
-        response = self.client().post('/api/v1/auth/register',
-                    data=json.dumps(self.user),
-                    content_type='application/json')
-                    
+        self.client().post('/api/v1/auth/register',
+                    data=json.dumps(self.test_user),
+                    headers={'content_type=':'application/json'})
+        response = self.client().post('/api/v1/auth/signin',
+                    data=json.dumps(self.test_user),
+                    content_type='application/json')            
         self.assertEqual(response.status_code, 200)
-        
         
     def test_sign_out_user(self):
         """
         Test api can sign out a user
         """
         response = self.client().post('/api/v1/auth/logout',
-                    data=json.dumps(self.user),
-                    content_type='application/json')
-                    
+                    data=json.dumps(self.sign_in_user),
+                    headers={'content_type=':'application/json',
+                            'x-access-token':self.token})
+        self.assertIn("You're now logged out", str(response.data))            
         self.assertEqual(response.status_code, 200)
         
         
